@@ -5,7 +5,8 @@
     <LinearLayout
         android:tag="Bottom2"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
         <ImageView
             android:id="@+id/magnifier"
             android:src="@drawable/magnifier"
@@ -13,6 +14,7 @@
             android:background="#f7e79c"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
+            android:clickable="false"
             android:layout_height="match_parent" />
         <ImageView
             android:id="@+id/star"
@@ -21,6 +23,7 @@
             android:background="#4cd964"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
+            android:clickable="false"
             android:layout_height="match_parent" />
         <ImageView
             android:id="@+id/trash"
@@ -29,6 +32,7 @@
             android:background="@drawable/red"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
+            android:clickable="false"
             android:layout_height="match_parent" />
     </LinearLayout>
 
@@ -37,7 +41,8 @@
         android:orientation="vertical"
         android:background="@drawable/white"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="visible">
         <TextView
             android:tag="Hover"
             android:text="理解（りかい）されるということは、一種（いっしゅ）の贅沢（ぜいたく）である。"

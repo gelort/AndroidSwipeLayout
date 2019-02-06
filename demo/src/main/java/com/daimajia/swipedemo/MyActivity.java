@@ -93,7 +93,7 @@ public class MyActivity extends Activity {
         sample2 = (SwipeLayout) findViewById(R.id.sample2);
         sample2.setShowMode(SwipeLayout.ShowMode.LayDown);
         sample2.addDrag(SwipeLayout.DragEdge.Right, sample2.findViewWithTag("Bottom2"));
-//        sample2.setShowMode(SwipeLayout.ShowMode.PullOut);
+        //sample2.setShowMode(SwipeLayout.ShowMode.PullOut);
         sample2.findViewById(R.id.star).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

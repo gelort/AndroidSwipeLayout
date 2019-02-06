@@ -18,7 +18,6 @@ import android.view.ViewParent;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.FrameLayout;
-
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -1516,9 +1515,10 @@ public class SwipeLayout extends FrameLayout {
         } else if (mode == ShowMode.LayDown) {
             if (mCurrentDragEdge == DragEdge.Left)
                 br = bl + mDragDistance;
-            else if (mCurrentDragEdge == DragEdge.Right)
+            else if (mCurrentDragEdge == DragEdge.Right) {
+                br = br - rect.left;
                 bl = br - mDragDistance;
-            else if (mCurrentDragEdge == DragEdge.Top)
+            } else if (mCurrentDragEdge == DragEdge.Top)
                 bb = bt + mDragDistance;
             else bt = bb - mDragDistance;
 
